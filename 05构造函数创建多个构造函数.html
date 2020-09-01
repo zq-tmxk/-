@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        function Person(name,age,sex){//构造带参数的构造函数
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            this.eat=function(){
+                console.log("我的名字是"+this.name+",我今年"+this.age+"了，我的性别是"+this.sex);
+            };
+        }
+    var person=new Person("张三",18,"男");
+        person.eat();
+</script>
+</body>
+</html>

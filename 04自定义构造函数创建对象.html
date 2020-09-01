@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //自定义构造函数创建对象
+    function Person(){//构造函数创建对象的函数名首字母要大写。
+        this.name="张三";//对象名先用this代替
+        this.age=18;
+        this.sex="男";
+        this.eat=function(){//方法名也先用this代替
+            console.log("我的名字是："+this.name+"我今年"+this.age+"我的性别是"+this.sex);
+        };
+    }
+    //函数的调用：
+    var person=new Person();//创建对象
+    person.eat();//调用函数里面的方法
+</script>
+</body>
+</html>

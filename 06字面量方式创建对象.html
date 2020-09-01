@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //字面量方式创建对象
+    //第一种方式
+    var obj={};//创建了对象，但对象为空
+    obj.name="张三";
+    obj.age=18;
+    obj.sex="男";
+    obj.eat=function(){
+        console.log(obj.name,obj.age,obj.sex);
+    };
+    obj.eat();//对象中方法的调用
+    //第二种方式
+    var object={
+        name:"张三",//分隔符为逗号,注意用的是冒号，不是等于号
+        age:12,
+        sex:"男",
+        sayHi:function(){
+            console.log("哈哈"+this.name);
+        }
+    };
+    object.name="李四";
+    console.log(object.name);
+    object.sayHi();
+</script>
+</body>
+</html>

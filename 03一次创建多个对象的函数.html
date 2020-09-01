@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function creatObject(name,age,sex){
+        //设置参数方便调用时给赋值
+        var obj=new Object();
+        obj.name=name;//name作为参数，前面的name为属性名
+        obj.age=age;
+        obj.sex=sex;
+        obj.eat=function(){
+            console.log("我叫"+this.name+",今年"+this.age+"了，我的性别是"+this.sex+"。我喜欢吃萝卜。")
+        };
+        return obj;//记得返回对象
+    }
+    var person=creatObject("王五",16,"男");
+    person.eat();
+    var person1=creatObject("张三",23,"男");
+    person1.eat();
+</script>
+</body>
+</html>

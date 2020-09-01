@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //调用系统构造函数创建对象
+    var obj=new Object();//创建对象
+    //添加属性
+    obj.name="张三";
+    obj.age=22;
+    obj.sex="女";
+    //定义方法
+    obj.eat=function(){
+        console.log("我喜欢吃西瓜");
+    };//负值要加标点
+    obj.cook=function(){
+        console.log("买菜");
+        console.log("吃");
+    };
+    console.log(obj.name);
+    console.log(obj.age);
+    console.log(obj.sex);
+    obj.eat();//方法的调用
+    obj.cook();
+</script>
+</body>
+</html>
